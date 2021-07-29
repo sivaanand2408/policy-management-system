@@ -1,0 +1,31 @@
+<div class="container">
+    <h1 class="text-primary">Update Employee</h1>
+    <div class="col-6">
+        <form #empForm="ngForm" (ngSubmit)="onSubmit(empForm.value)">
+            <div clas="form-group">
+                <label>Employee Id</label>
+                <input type="text" class="form-control" name="id" [(ngModel)]="employee.id" readonly/>
+            </div>
+            <div clas="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="employee.name"/>
+            </div>
+            <div clas="form-group">
+                <label>Name</label>&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Male" [(ngModel)]="employee.gender"/>Male
+                <input type="radio" name="gender" value="Female" [(ngModel)]="employee.gender"/>Female
+            </div>
+            <div clas="form-group">
+                <label>Age</label>
+                <input type="text" class="form-control" name="age" [(ngModel)]="employee.age"/>
+            </div>
+            <div clas="form-group">
+                <label>Salary</label>
+                <input type="text" class="form-control" name="salary" [(ngModel)]="employee.salary"/>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Update"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary" (click)="onCancel()">Cancel</button>
+        </form>
+    </div>
+</div>
+
