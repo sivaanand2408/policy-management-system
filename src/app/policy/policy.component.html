@@ -1,0 +1,102 @@
+<div *ngIf="message">
+    {{message}}
+</div>
+
+<div *ngIf="policyDetailsResponse" align="center">
+    <h1>Policy Details</h1>
+    <table style="border: 1px solid black;border-collapse: collapse;">
+      
+      <tr><td>Consumer Id:</td>
+        <td>
+        {{policyDetailsResponse.consumerid}}
+    </td>
+      </tr>
+      <tr><td>Policy Id:</td>
+        <td>
+        {{policyDetailsResponse.policyid}}
+    </td>
+      </tr>
+      <tr><td>Property Type:</td>
+        <td>
+        {{policyDetailsResponse.property_type}}
+    </td>
+      </tr>
+      <tr><td>Consumer Type:</td>
+        <td>
+        {{policyDetailsResponse.consumer_type}}
+    </td>
+      </tr>
+      <tr><td>Assured Sum:</td>
+        <td>
+        {{policyDetailsResponse.assured_sum}}
+    </td>
+      </tr>
+      <tr><td>Tenure:</td>
+        <td>
+        {{policyDetailsResponse.tenure}}
+    </td>
+      </tr>
+      <tr><td>Business Value:</td>
+        <td>
+        {{policyDetailsResponse.business_value}}
+    </td>
+      </tr>
+      <tr><td>Property Value:</td>
+        <td>
+        {{policyDetailsResponse.property_value}}
+    </td>
+      </tr>
+      <tr><td>Base Location:</td>
+        <td>
+        {{policyDetailsResponse.base_location}}
+    </td>
+      </tr>
+      <tr><td>Type:</td>
+        <td>
+        {{policyDetailsResponse.type}}
+    </td>
+      </tr>
+       <tr><td>Business Id:</td>
+        <td>
+        {{policyDetailsResponse.businessid}}
+    </td>
+      </tr>
+      <tr><td>Payment Details:</td>
+        <td>
+        {{policyDetailsResponse.paymentdetails}}
+    </td>
+      </tr>
+      <tr><td>Acceptance Status:</td>
+        <td>
+        {{policyDetailsResponse.acceptancestatus}}
+    </td>
+      </tr>
+      <tr><td>Policy Status:</td>
+        <td>
+        {{policyDetailsResponse.policystatus}}
+    </td>
+      </tr>
+      <tr><td>Effective Date:</td>
+        <td>
+        {{policyDetailsResponse.effectivedate}}
+    </td>
+      </tr>
+      <tr><td>Covered Sum:</td>
+        <td>
+        {{policyDetailsResponse.covered_sum}}
+    </td>
+      </tr>
+      <tr><td>Duration:</td>
+        <td>
+        {{policyDetailsResponse.duration}}
+    </td>
+      </tr>
+      <tr><td>Accepted Quote:</td>
+        <td>
+        {{policyDetailsResponse.acceptedquote}}
+    </td>
+      </tr>
+    </table>	
+    </div>
+    <br>
+    <br>
